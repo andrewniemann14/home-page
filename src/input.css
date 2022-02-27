@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* border: 1px solid black; */
+}
+
+body {
+  /*background: rgb(4, 28, 41); /* 26-30 */
+  font-family: 'Poppins', sans-serif;
+}
+
+.fa-python {
+  /* color: #9c47fc; */
+  background: -webkit-linear-gradient(top left, rgb(75, 75, 241) 45%, rgb(255, 239, 19) 55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

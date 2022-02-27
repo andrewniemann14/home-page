@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Home</title>
+  <link href="output.css" rel="stylesheet">
+  <!-- run this every editing session so that newly added classes in HTML are added to output CSS -->
+  <!-- npx tailwindcss -i ./src/input.css -o ./public/output.css --watch -->
+  <script src="https://kit.fontawesome.com/c52754ff7b.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center bg-black">
+
+  <!-- Navbar -->
+
+
+  <!-- Cards Container -->
+  <!-- this is on the left side and has all of my projects and work -->
+  <!-- a separate div will go on the right with my timeline -->
+  <div class="bg-cyan-900 flex flex-col items-center max-w-6xl min-h-screen">
+
+
+  <!-- Personal Card -->
+  <div class="relative bg-gray-200 rounded-md sm:h-80 w-64 sm:w-auto m-4 p-2 shadow-md shadow-black border-white border-2">
+
+
+    <!-- Title -->
+    <div class="text-center">
+      <h1 class="text-2xl font-bold text-center sm:text-left">Andrew Niemann</h1>
+    </div>
+
+    <div class="flex flex-col sm:flex-row h-96 sm:h-56">
+      <!-- Picture -->
+      <div class="w-56">
+        <img src="IMG_8602.JPG" alt="">
+      </div>
+
+      <!-- Description -->
+      <div class="h-56 sm:h-40 sm:w-64 mb-2 p-2 text-justify">
+        <p>A catchy lil description of moi. Get a better picture, and make it go above text when card goes vertical.</p>
+      </div>
+    </div>
+
+    <br/>
+
+    <!-- Links -->
+    <div class="absolute bottom-0 left-0 w-full">
+      <div class="text-3xl float-left p-1 h-12">
+        <a target="_blank" href="https://www.linkedin.com/in/drewni/">
+          <i class="fab fa-linkedin text-blue-800 ml-1"></i></a>
+        <a target="_blank" href="https://github.com/andrewniemann14/">
+          <i class="fab fa-github ml-1"></i></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <h1 class="text-white">Projects</h1>
+  <!-- Project Cards Container -->
+  <div class="flex flex-wrap justify-center">
+
+
+  <!-- Project Card: JSONator -->
+  <div class="relative bg-gray-200 rounded-md h-96 sm:h-80 w-64 sm:w-96 m-4 p-2 shadow-md shadow-black border-white border-2">
+
+    <!-- Technologies -->
+    <div class="text-right text-2xl">
+      <i class="fab fa-html5 text-red-600"></i>
+      <i class="fab fa-js text-yellow-400"></i>
+    </div>
+
+    <!-- Title -->
+    <div class="">
+      <h1 class="text-2xl">The JSONator</h1>
+    </div>
+
+    <!-- Description -->
+    <div class="block h-56 sm:h-40 mb-2 shadow-inner shadow-gray-400 overflow-hidden p-1">
+      <p class="">
+        Reads a JSON file and generates an HTML structure to mirror it.
+        Allows editing of the HTML and saving as a new JSON file.
+        Built with vanilla JavaScript.
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div class="absolute bottom-0 left-0 w-full">
+      <div class="text-3xl float-left p-1 h-12">
+        <a target="_blank" href="https://github.com/andrewniemann14/jsonator">
+          <i class="fab fa-github ml-1"></i></a>
+        <a href="projects/jsonator.html">
+          <i class="fas fa-file-invoice text-blue-500 ml-1"></i></a>
+      </div>
+  
+      <div class="float-right rounded-md rounded-tr-none rounded-bl-none h-12 w-36 bg-black text-white">
+        <a class="p-1 block h-full w-full leading-10 text-xl text-center" href="https://jsonator.niemann.app">See it live >></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Project Card: Databaser -->
+  <div class="relative bg-gray-200 rounded-md h-96 sm:h-80 w-64 sm:w-96 m-4 p-2 shadow-md shadow-black border-white border-2">
+
+    <!-- Technologies -->
+    <div class="text-right text-2xl">
+      <i class="fab fa-python fa-python-gradient"></i>
+      <i class="fab fa-php text-blue-700"></i>
+      <i class="fas fa-database text-orange-500"></i>
+    </div>
+
+    <!-- Title -->
+    <div class="">
+      <h1 class="text-2xl">DR2.0 Backend</h1>
+    </div>
+
+    <!-- Description -->
+    <div class="block h-56 sm:h-40 mb-2 shadow-inner shadow-gray-400 overflow-hidden p-1">
+      <p>
+        Python app scrapes website for data, passes data to PHP app for insertion into MySQL.
+        Also enables daily text message notification.
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div class="absolute bottom-0 left-0 w-full">
+      <div class="text-3xl float-left p-1 h-12">
+        <a target="_blank" href="https://github.com/andrewniemann14/dr2-database">
+          <i class="fab fa-github ml-1"></i></a>
+        <a href="projects/dr2-backend.html">
+          <i class="fas fa-file-invoice text-blue-500 ml-1"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- Project Card: DR2 Dashboard -->
+  <div class="relative bg-gray-200 rounded-md h-96 sm:h-80 w-64 sm:w-96 m-4 p-2 shadow-md shadow-black border-white border-2">
+
+    <!-- Technologies -->
+    <div class="text-right text-2xl">
+      <i class="fab fa-react text-cyan-500"></i>
+    </div>
+
+    <!-- Title -->
+    <div class="">
+      <h1 class="text-2xl">DR2.0 Dashboard</h1>
+    </div>
+
+    <!-- Description -->
+    <div class="block h-56 sm:h-40 mb-2 shadow-inner shadow-gray-400 overflow-hidden p-1">
+      <p>
+        Not started yet
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div class="absolute bottom-0 left-0 w-full">
+      <div class="text-3xl float-left p-1 h-12">
+        <a target="_blank" href="https://github.com/andrewniemann14?tab=repositories">
+          <i class="fab fa-github ml-1"></i></a>
+        <a href="projects/dr2-dashboard.html" target="_blank">
+          <i class="fas fa-file-invoice text-blue-500 ml-1"></i></a>
+      </div>
+
+      <div class="float-right rounded-md rounded-tr-none rounded-bl-none h-12 w-36 bg-black text-white">
+        <a class="p-1 block h-full w-full leading-10 text-xl text-center" href="https://dr2.niemann.app">See it live >></a>
+      </div>
+    </div>
+  </div>
+
+
+</div> <!-- end of projects container -->
+
+  </div> <!-- end of cards container -->
+
+
+</body>
+</html>
