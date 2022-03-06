@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writeup: JSON Station</title>
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html">Back to home</a>
+    <div class="heading">
+      <h2>JSON Station</h2>
+      <p>This page will hold documentation and a journal-style description of the process involved with developing this project.</p>
+    </div>
+    <br>
+  
+    <div>
+      <h4>What's involved</h4>
+      <ul>
+        <li>Vanilla JavaScript</li>
+        <li>lots of recursion</li>
+        <li>Very basic HTML/CSS</li>
+      </ul>
+    </div>
+    <br>
+    <div>
+      <h4>Background</h4>
+      <p>
+        The idea came from using JSON in an early project, something my father asked me to build for him.
+        The product used JSON files containing information that he would add to periodically.
+        The JSON formatting was too complicated for him to edit, so he would email me the information, and I would put it into the files that fed into his program.
+        I thought a tool that removed the syntax and just let him plug in values would be useful.
+        I found something online, but I liked the idea of building my own as a learning experience.
+      </p>
+      <p>
+        The first thought was to build it using Java and FXML, but decided to go with JavaScript and display the JSON as plain HTML.
+        That way it would be easily accessible online.
+        In order to gain familiarity with basic JavaScript, I planned to make it with vanilla JavaScript, no frameworks or libraries of any kind. 
+      </p>
+    </div>
+    <br>
+    <div>
+      <h4>Step 1: Take a JSON file and display it in HTML</h4>
+      <p>
+        In order to use this with any future JSON files, especially ones with an unknown structure,
+        I would need to recursively read the JSON and build an HTML structure to match.
+      </p>
+      <pre class="code-quote">
+        fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          json = data;
+          <span class="code-focus">printJson(json, topDiv)</span>;
+        })
+      </pre>
+    </div>
+
+
+
+
+
+  </div>
+</body>
+</html>

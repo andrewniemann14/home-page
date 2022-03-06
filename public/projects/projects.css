@@ -1,0 +1,28 @@
+body {
+  background: gray;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  max-width: 72rem;
+  margin: 1em auto;
+  padding: 4rem;
+}
+
+.heading {
+  text-align: center;
+}
+
+.code-quote {
+  background: rgb(30, 40, 50);
+  color: lightgoldenrodyellow;
+  max-width: 48rem;
+  margin-left: 4em;
+  padding: 1em 0;
+  overflow: scroll;
+}
+
+.code-focus {
+  color: lightcoral;
+}
