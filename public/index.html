@@ -16,7 +16,7 @@
 
   <!-- Navbar -->
 
-
+  <!-- TODO: redo the whole page, lose the cards. condense 3 parts of dr2 project to one section -->
   <!-- Cards Container -->
   <!-- this is on the left side and has all of my projects and work -->
   <!-- a separate div will go on the right with my timeline -->
@@ -62,10 +62,49 @@
 
   </div>
 
-  <h1 class="text-white">Projects</h1>
+  <h1 class="text-white text-4xl">Projects</h1>
   <!-- Project Cards Container -->
   <div class="flex flex-wrap justify-center">
 
+
+  <!-- Project Card: DR2 -->
+  <div class="relative bg-gray-200 rounded-md
+    h-96 sm:h-80
+    w-11/12 max-w-sm sm:max-w-lg
+    m-4 p-2 shadow-md shadow-black border-white border-2">
+
+    <!-- Technologies -->
+    <div class="text-right text-2xl">
+      <i class="fab fa-react text-sky-500"></i>
+    </div>
+
+    <!-- Title -->
+    <div class="">
+      <h1 class="text-2xl">DR2.0 Dashboard</h1>
+    </div>
+
+    <!-- Description -->
+    <div class="block h-56 sm:h-40 mb-2 shadow-inner shadow-gray-400 overflow-hidden p-1">
+      <p class="">
+        React app presenting and analyzing the daily challenges of DiRT Rally 2.0
+      </p>
+    </div>
+
+    <!-- Links -->
+    <div class="absolute bottom-0 left-0 w-full">
+      <div class="text-3xl float-left p-1 h-12">
+        <a target="_blank" href="https://github.com/andrewniemann14/dr2-frontend">
+          <i class="fab fa-github ml-1"></i></a>
+        <a href="projects/dr2-frontend.html">
+          <i class="fas fa-file-invoice text-blue-500 ml-1"></i></a>
+      </div>
+  
+      <div class="float-right rounded-md rounded-tr-none rounded-bl-none h-12 w-36 bg-black text-white">
+        <a class="p-1 block h-full w-full leading-10 text-xl text-center" href="https://dr2.niemann.app">See it live >></a>
+      </div>
+    </div>
+
+  </div>
 
   <!-- Project Card: JSON -->
   <div class="relative bg-gray-200 rounded-md
@@ -148,43 +187,6 @@
   </div>
 
 
-  <!-- Project Card: DR2 Dashboard -->
-  <div class="relative bg-gray-200 rounded-md
-    h-96 sm:h-80
-    w-11/12 max-w-sm sm:max-w-lg
-    m-4 p-2 shadow-md shadow-black border-white border-2">
-
-    <!-- Technologies -->
-    <div class="text-right text-2xl">
-      <i class="fab fa-react text-cyan-500"></i>
-    </div>
-
-    <!-- Title -->
-    <div class="">
-      <h1 class="text-2xl">DR2.0 Dashboard</h1>
-    </div>
-
-    <!-- Description -->
-    <div class="block h-56 sm:h-40 mb-2 shadow-inner shadow-gray-400 overflow-hidden p-1">
-      <p>
-        Not started yet
-      </p>
-    </div>
-
-    <!-- Links -->
-    <div class="absolute bottom-0 left-0 w-full">
-      <div class="text-3xl float-left p-1 h-12">
-        <a target="_blank" href="https://github.com/andrewniemann14/dr2-dashboard">
-          <i class="fab fa-github ml-1"></i></a>
-        <a href="projects/dr2-dashboard.html" target="_blank">
-          <i class="fas fa-file-invoice text-blue-500 ml-1"></i></a>
-      </div>
-
-      <div class="float-right rounded-md rounded-tr-none rounded-bl-none h-12 w-36 bg-black text-white">
-        <a class="p-1 block h-full w-full leading-10 text-xl text-center" href="https://dr2.niemann.app">See it live >></a>
-      </div>
-    </div>
-  </div>
 
 
 </div> <!-- end of projects container -->
